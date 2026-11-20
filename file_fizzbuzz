@@ -1,0 +1,19 @@
+#funcion def(): for=estructura de repeticion
+#int convierte la funcion a entero
+#definir una lista vacia[]
+#print es una funcion y procesar_archivo es otra por eso doble()
+
+ 
+from fizzbuzz import fizzbuzz
+
+def procesar_archivo(nombre_archivo="numeros.txt"):
+    resultados = []
+    with open(nombre_archivo, encoding="utf-8") as archivo:
+        for linea in archivo:
+            linea = linea.strip()
+            if linea == "":
+                continue
+            resultados.append(fizzbuzz(int(linea)))
+    return resultados
+
+print(procesar_archivo())

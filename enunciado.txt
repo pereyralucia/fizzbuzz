@@ -1,0 +1,21 @@
+enunciado.txt
+
+La función recibe un número entero y devuelve:
+- "fizzbuzz" si es divisible por 3 y 5 a la vez
+- "fizz" si solo es divisible por 3
+- "buzz" si solo es divisible por 5
+- "fizzbuzz" si el número es 0
+- El mismo número si no cumple ninguna de las anteriores
+
+
+
+def fizzbuzz(num):
+    if num%3==0 and num%5==0:
+      return "fizzbuzz"
+    if num%3==0:
+     return "fizz"
+    if num%5==0:
+       return"buzz"
+    if num == 0:
+       return "fizzbuzz"
+    return (num)

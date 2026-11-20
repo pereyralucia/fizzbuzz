@@ -40,6 +40,8 @@ class Testfizzbuzz(unittest.TestCase):
         self.assertEqual(fizzbuzz(0),"fizzbuzz")
     def test_multiplo_negativo(self):
         self.assertEqual(fizzbuzz(-15),"fizzbuzz")
+    def test_multiplo_decimales(self):
+        self.assertEqual(fizzbuzz(5.0),"buzz")
 
 
 if __name__ == '__main__':
